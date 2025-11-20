@@ -1,1 +1,6 @@
-# 19-state
+
+In the version that does not use the State Design Pattern, all the logic is inside one class, and every method uses a long series of if/else checks to decide what the machine should do in each situation. This works, but the code becomes messy and hard to follow. If we ever need to add a new state or change how a certain state works, we have to modify several parts of the code, which increases the chance of mistakes. Everything is mixed together, so it’s not very organized.
+
+With the State Design Pattern, each state is placed in its own class. Every state handles its own behavior, like what happens when someone inserts a quarter or turns the crank. This makes the code cleaner and easier to understand, because each state is separated and has its own logic. If we need a new state, we simply add a new class without changing the existing ones.
+
+Overall, the non-pattern version is simple at first but becomes difficult to maintain as the program grows. The State Pattern version is much more organized and easier to update, especially when the machine has many states or different behaviors.
